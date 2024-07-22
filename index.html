@@ -89,20 +89,25 @@
                 document.getElementById('navbar').innerHTML = data;
             });
 
+        // Redirect functions for buttons
         function goToProjectsPage() {
-            window.location.href = 'https://micaha2004.github.io/website/portfolio';
+            window.location.href = 'https://micaha2004.github.io/website/portfolio/portfolio.html';
         }
 
         function goToResumePage(){
-            window.location.href = "https://micaha2004.github.io/website/resume";
+            window.location.href = "https://micaha2004.github.io/website/resume/resume.html";
         }
+
+        // Function to remove trailing slash from URL
+        (function() {
+            if (window.location.pathname.endsWith('/')) {
+                window.location.pathname = window.location.pathname.slice(0, -1);
+            }
+        })();
     </script>
 
 </body>
 </html>
-
-
-
 
 
 
