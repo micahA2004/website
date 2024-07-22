@@ -3,41 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Home Page - Micah Andrejczak</title>
+
     <style>
-
-
-      
         p{
           color: mediumvioletred;
         }
+
+        h1{
+          text-align: center;
+        }
+
+        .button1{
+          color:blueviolet;
+          display: inline-block;
+          padding: 60px 50px;
+          font-size: 50px;
+          cursor: pointer;
+          text-align: left;
+          text-decoration: none;
+          outline: none;
+          
+          background-color: #4CAF50;
+          border: none;
+          border-radius: 140px;
+          box-shadow: 0 15px #999;
+        }
+
     </style>
+
 </head>
 <body>
-    <h1><strong>HI MOMMY</strong></h1>
+    <h1><strong>Home Page</strong></h1>
     <p>This will be the home page for my <strong>website</strong></p>
-    <p><strong>I am a MEEN <hr></strong></p>
-    <p>Testing Testing 123</p>
-</body>
+    <p><strong>Howdy!<hr></strong></p>
 
-<script id="__bs_script__">//<![CDATA[
-  (function() {
-    try {
-      var script = document.createElement('script');
-      if ('async') {
-        script.async = true;
-      }
-      script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=3.0.2'.replace("HOST", location.hostname);
-      if (document.body) {
-        document.body.appendChild(script);
-      } else if (document.head) {
-        document.head.appendChild(script);
-      }
-    } catch (e) {
-      console.error("Browsersync: could not append script tag", e);
-    }
-  })()
-//]]></script>
+    <h2>Sup</h2>
+
+    <button class = "button1" onclick="goToProjectsPage()">Projects</button>
+
+    <div><br></div>
+
+    <button class = "button2" onclick="goToResumePage()">Resume</button>
+
+    <script>
+        function goToProjectsPage() {
+            window.location.href = 'https://micaha2004.github.io/coursera-test/site';
+        }
+
+        function goToResumePage(){
+            window.location.href = "https://micaha2004.github.io/coursera-test/site"
+        }
+    </script>
 
 </body>
+
+
+
 </html>
