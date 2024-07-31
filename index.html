@@ -4,33 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Home Page - Micah Andrejczak</title>
-
     <style>
         p {
-          color: mediumvioletred;
+            color: mediumvioletred;
         }
-
         h1 {
-          text-align: center;
+            text-align: center;
         }
-
         .button1 {
-          color: blueviolet;
-          display: inline-block;
-          padding: 60px 50px;
-          font-size: 50px;
-          cursor: pointer;
-          text-align: left;
-          text-decoration: none;
-          outline: none;
-          background-color: #4CAF50;
-          border: none;
-          border-radius: 140px;
-          box-shadow: 0 15px #999;
+            color: blueviolet;
+            display: inline-block;
+            padding: 60px 50px;
+            font-size: 50px;
+            cursor: pointer;
+            text-align: left;
+            text-decoration: none;
+            outline: none;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 140px;
+            box-shadow: 0 15px #999;
         }
-
         /* Global CSS for the navigation bar */
         nav {
             background-color: #333;
@@ -38,18 +33,15 @@
             display: flex;
             justify-content: center; /* Center the contents */
         }
-
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             display: flex;
         }
-
         nav ul li {
             margin: 0 10px; /* Add some space between the links */
         }
-
         nav ul li a {
             display: block;
             color: white;
@@ -57,30 +49,21 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-
         nav ul li a:hover {
             background-color: #111;
         }
-
     </style>
-
 </head>
 <body>
     <!-- Placeholder for the navigation bar -->
     <div id="navbar"></div>
-
     <h1><strong>Home Page</strong></h1>
     <p>This will be the home page for my <strong>website</strong></p>
     <p><strong>Howdy!<hr></strong></p>
-
     <h2></h2>
-
     <button class="button1" onclick="goToProjectsPage()">Projects</button>
-
     <div><br></div>
-
     <button class="button2" onclick="goToResumePage()">Resume</button>
-
     <script>
         // Function to load the navigation bar
         fetch('https://micaha2004.github.io/website/navbar.html')
@@ -88,27 +71,15 @@
             .then(data => {
                 document.getElementById('navbar').innerHTML = data;
             });
-
         // Redirect functions for buttons
         function goToProjectsPage() {
             window.location.href = 'https://micaha2004.github.io/website/portfolio/portfolio.html';
         }
-
         function goToResumePage(){
             window.location.href = "https://micaha2004.github.io/website/resume/resume.html";
         }
-
-        // Function to remove trailing slash from URL
-        (function() {
-            if (window.location.pathname.endsWith('/')) {
-                window.location.pathname = window.location.pathname.slice(0, -1);
-            }
-        })();
     </script>
     <h3>Testing Response</h3>
 </body>
 </html>
-
-
-
 
