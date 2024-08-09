@@ -6,6 +6,16 @@
 	<title></title>
 </head>
 <body>
+	<div id="navbar"></div>
 	<h1>Portfolio Page</h1>
+	<h2>Hello</h2>
+	<script>
+        // Function to load the navigation bar
+        fetch('https://micaha2004.github.io/website/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+	</script>
 </body>
 </html>
